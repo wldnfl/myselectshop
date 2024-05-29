@@ -20,7 +20,7 @@ public class FolderService {
 
         List<Folder> folderList = new ArrayList<>();
         for (String folderName : folderNames) {
-            if(!isExistFolderName(folderName, existFolderList)) {
+            if (!isExistFolderName(folderName, existFolderList)) {
                 Folder folder = new Folder(folderName, user);
                 folderList.add(folder);
             } else {
